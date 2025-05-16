@@ -7,9 +7,9 @@ public class Main {
             System.out.printf("Hello and welcome!");
             CurrencyConverter converter = new CurrencyConverter();
             JsonObject data = converter.getCurrencyData("USD");
-            if (data != null) {
-                System.out.println(data.toString());
-            }
+
+            System.out.println(converter.ultimaConsultaExitosa.toString());
+            System.out.println(converter.monedas.toString());
 
 
     }
