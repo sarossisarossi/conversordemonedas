@@ -9,8 +9,12 @@ public class Main {
             JsonObject data = converter.getCurrencyData("USD");
 
             System.out.println(converter.ultimaConsultaExitosa.toString());
-            System.out.println(converter.monedas.toString());
-
+            System.out.println(converter.monedas.get("MOP"));
+            Monedas.cargarDesdeCSV("src/monedas.csv");
+            Menu menu = new Menu();
+            menu.agregarOpcion("USD", "CLP");
+            menu.agregarOpcion("EUR", "MXN");
+            menu.mostrarOpciones();
 
     }
 }
