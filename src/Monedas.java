@@ -19,10 +19,7 @@ public class Monedas {
             String linea;
             boolean esPrimera = true;
             while ((linea = br.readLine()) != null) {
-                if (esPrimera) {
-                    esPrimera = false; // saltar encabezado
-                    continue;
-                }
+
                 System.out.println(linea.toString());
                 String[] partes = linea.split(";", 2);
                 if (partes.length == 2) {

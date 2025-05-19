@@ -12,9 +12,12 @@ public class Main {
             System.out.println(converter.monedas.get("MOP"));
             Monedas.cargarDesdeCSV("src/monedas.csv");
             Menu menu = new Menu();
-            menu.agregarOpcion("USD", "CLP");
             menu.agregarOpcion("EUR", "MXN");
+            menu.agregarOpcion("USD", "CLP");
+            menu.agregarOpcionSalida();
             menu.mostrarOpciones();
+            menu.ejecutarMenu();
+
 
     }
 }
