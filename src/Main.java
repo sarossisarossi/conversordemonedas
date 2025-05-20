@@ -14,6 +14,9 @@ public class Main {
             Menu menu = new Menu();
             menu.agregarOpcion("EUR", "MXN");
             menu.agregarOpcion("USD", "CLP");
+            menu.agregarOpcion("BRL", "CLP");
+            menu.agregarOpcion("CLP", "EUR");
+
             menu.agregarOpcionSalida();
             menu.mostrarOpciones();
             menu.ejecutarMenu();
